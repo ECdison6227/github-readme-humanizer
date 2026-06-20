@@ -67,6 +67,8 @@ git clone https://github.com/ECdison6227/github-readme-humanizer.git \
 
 ## 完整案例：把一份 AI 味 README 改造成人味 README
 
+> 下面例子里的“数学老师朋友”是**虚构示例**，仅用来演示写法。真实项目的痛点必须来自你自己，skill 会主动问你。
+
 输入在 [examples/input/ai-style-readme.md](examples/input/ai-style-readme.md)，典型 AI 味：
 
 ```markdown
@@ -130,7 +132,8 @@ This project is a powerful and efficient PDF processing tool
 
 ## 限制与后续
 
-- 这个 skill 不会替你运行真实程序生成效果图，你需要自己提供输入文件。
+- 这个 skill **不会替你编痛点故事**。写“为什么要做这个”之前，它会先问你真实的触发场景；你不说的话，它会留占位符，而不是编一个“我老婆/我朋友”。
+- 它不会替你运行真实程序生成效果图，你需要自己提供输入文件。
 - 它不会自动创建 GitHub 仓库，remote 和 repo 需要你自己确认。
 - 如果项目本身逻辑就很复杂，建议先让 skill 出初稿，你再人工润色。
 

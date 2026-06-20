@@ -16,7 +16,8 @@ Thanks for helping make READMEs more human.
 ## Style Guide
 
 - Avoid forbidden words: "powerful", "efficient", "intelligent", "elegant", "lightweight", "one-stop", "revolutionary".
-- Use real stories, specific numbers, and concrete commands.
+- **Never invent the maintainer's backstory.** Ask the user for their real pain point, or use a clearly marked placeholder.
+- Use real stories (user-provided), specific numbers, and concrete commands.
 - Keep banners as draw.io-style SVG flowcharts.
 - Contact email must remain `2014184720@qq.com` unless the maintainer explicitly changes it.
 

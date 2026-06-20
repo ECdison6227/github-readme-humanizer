@@ -29,7 +29,7 @@ github-readme-humanizer/
 1. Any README change must pass the 12-point human-tone checklist in `SKILL.md`.
 2. Banners must be draw.io-style SVG; keep `banner.drawio` in sync with `banner.svg`.
 3. Do not use placeholder images, network images, or abstract AI-generated art.
-4. Do not invent personal stories about the maintainer. Examples can be fictional, but must be marked as examples.
+4. **Never invent the maintainer's backstory.** Before writing the "Why I built this" / "为什么要做这个" section, ask the user for their real pain point. If they don't provide one, use a clearly marked placeholder like `[你的真实故事：...]` instead of making up "my wife / my friend / my boss" stories.
 5. Contact email is `2014184720@qq.com`; do not use the GitHub noreply address in SECURITY.md.
 6. Commit messages should not contain internal jargon like "去 AI 味".
 7. Privacy check before every push: no real names, phone numbers, addresses, keys, or local absolute paths.

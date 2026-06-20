@@ -67,6 +67,8 @@ If you don't want to install the skill, just read [SKILL.md](SKILL.md). The 12-p
 
 ## Full Example: From AI-style to Human-style README
 
+> The "math teacher friend" story below is a **fictional example** for demonstration only. A real project's backstory must come from you; the skill will ask you for it.
+
 Input: [examples/input/ai-style-readme.md](examples/input/ai-style-readme.md) — a typical AI-flavored README:
 
 ```markdown
@@ -131,6 +133,7 @@ The skill itself has no heavy config. The rules live in [SKILL.md](SKILL.md):
 
 ## Limitations and Roadmap
 
+- This skill **will not invent your backstory**. Before writing "Why I built this", it will ask you for the real pain point. If you don't provide one, it leaves a placeholder instead of making up "my wife / my friend".
 - This skill won't run your program to generate real screenshots; you need to provide the input files.
 - It won't create GitHub repositories for you; remotes and repos must be confirmed by you.
 - For complex projects, let the skill produce a first draft and then polish it yourself.

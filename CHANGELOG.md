@@ -14,3 +14,4 @@
 ### Fixed
 
 - Removed invented personal stories from examples; replaced with clearly fictional friend scenarios.
+- Added a mandatory "collect real pain point" step: AI must ask the user before writing the "Why I built this" section, and cannot make up "my wife / my friend / my boss" stories.
