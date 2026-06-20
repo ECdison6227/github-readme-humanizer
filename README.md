@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="README.md">中文</a> | <a href="README.en.md">English</a>
+  <a href="README.en.md">English</a> | <a href="README.md">中文</a>
 </p>
 
 <p align="center">
@@ -9,6 +9,27 @@
 <h1 align="center">github-readme-humanizer</h1>
 
 <p align="center">让 GitHub README 读起来像真人写的。</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://github.com/ECdison6227/github-readme-humanizer/actions/workflows/validate.yml"><img src="https://github.com/ECdison6227/github-readme-humanizer/actions/workflows/validate.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/ECdison6227/github-readme-humanizer/stargazers"><img src="https://img.shields.io/github/stars/ECdison6227/github-readme-humanizer?style=social" alt="Stars"></a>
+</p>
+
+## 目录
+
+- [一键使用](#一键使用)
+- [为什么要做这个](#为什么要做这个)
+- [能做什么 / 不能做什么](#能做什么--不能做什么)
+- [快速开始](#快速开始)
+- [完整案例](#完整案例)
+- [它是怎么工作的](#它是怎么工作的)
+- [关键配置](#关键配置)
+- [我们踩过的坑](#我们踩过的坑)
+- [限制与后续](#限制与后续)
+- [致谢](#致谢)
+- [交流和反馈](#交流和反馈)
+- [License](#license)
 
 ## 一键使用
 
@@ -27,7 +48,9 @@
 
 我写了几个自用 skill，准备放到 GitHub 上分享。结果第一版 README 写出来是这样的：
 
+<!-- ai-style-example-begin -->
 > 本项目是一个高效的 README 去 AI 味工具，旨在帮助用户自动生成更加自然、贴近人类的 GitHub 项目介绍文档。
+<!-- ai-style-example-end -->
 
 我自己看了都尴尬。功能列了一堆，但没人知道这玩意儿到底解决什么问题、谁在什么场景下会用。star 不会涨，issue 没人提，仓库就像一份没人看的说明书。
 
@@ -48,14 +71,12 @@
 ### 作为 Trae / Codex / Claude Code skill 安装
 
 ```bash
-# Trae
-git clone https://github.com/ECdison6227/github-readme-humanizer.git \
-  ~/.trae-cn/skills/github-readme-humanizer
-
-# Claude Code
-git clone https://github.com/ECdison6227/github-readme-humanizer.git \
-  ~/.claude/skills/github-readme-humanizer
+git clone https://github.com/ECdison6227/github-readme-humanizer.git
+cd github-readme-humanizer
+./install.sh
 ```
+
+`install.sh` 会自动检测 `.claude`、`.codex`、`.trae`、`.trae-cn` 等常见 skill 目录并复制进去。
 
 然后在 Agent 对话里说：
 
@@ -71,20 +92,22 @@ git clone https://github.com/ECdison6227/github-readme-humanizer.git \
 
 输入在 [examples/input/ai-style-readme.md](examples/input/ai-style-readme.md)，典型 AI 味：
 
+<!-- ai-style-example-begin -->
 ```markdown
 # PDF Processor
 
 This project is a powerful and efficient PDF processing tool
 ...
 ```
+<!-- ai-style-example-end -->
 
 输出在 [examples/output/human-style-readme.md](examples/output/human-style-readme.md)：
 
 ```markdown
 # 作业帮错题本裁剪器
 
-我老婆是初中数学老师。每次从作业帮导出错题本 PDF，
-她都要把每道题单独截图出来...
+我的一位初中数学老师朋友，每次从作业帮导出错题本 PDF，
+都要把每道题单独截图出来...
 ```
 
 改造前后逐段对比可以看 [examples/before-after-snippet.md](examples/before-after-snippet.md)。

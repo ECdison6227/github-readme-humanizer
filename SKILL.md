@@ -260,13 +260,14 @@ commit message 不要写内部术语：
 2. 检查 `LICENSE` 是否存在
 3. 检查示例文件是否已放入仓库
 4. 检查 analyze.py 等调试脚本是否已删除（用户未要求保留则删除）
-5. 建议用户手动处理受限制文件（如 Desktop 路径、大文件）
-6. 用户确认后执行：
+5. 运行 `./scripts/validate.sh` 做结构自检
+6. 建议用户手动处理受限制文件（如 Desktop 路径、大文件）
+7. 用户确认后执行：
 
 ```bash
 git init  # 如果还没初始化
-git add README.md README.en.md LICENSE .gitignore assets/ examples/ <主代码文件>
-git commit -m "init: add PDF question cropper with human-style README"
+git add README.md README.en.md LICENSE .gitignore assets/ examples/ scripts/ install.sh <主代码文件>
+git commit -m "init: add project with human-style README"
 git remote add origin <用户提供的仓库地址>
 git push -u origin main
 ```

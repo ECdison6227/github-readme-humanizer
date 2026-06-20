@@ -11,6 +11,15 @@
 - Privacy check guide and push-preparation checklist.
 - Example AI-style vs human-style README comparison.
 
+### Added
+
+- `install.sh` for one-command installation into `.claude`, `.codex`, `.trae`, `.trae-cn` skill directories.
+- `scripts/validate.sh` to check README structure, language switches, forbidden words, and pain-point rules.
+- GitHub Actions workflow `.github/workflows/validate.yml` for CI gating.
+- `.github/ISSUE_TEMPLATE/` for bug reports and feature requests.
+- `CODE_OF_CONDUCT.md`.
+- Badges and table of contents in both READMEs.
+
 ### Fixed
 
 - Removed invented personal stories from examples; replaced with clearly fictional friend scenarios.

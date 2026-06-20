@@ -15,6 +15,18 @@ github-readme-humanizer/
 ├── SKILL.md               # Skill definition and rules
 ├── LICENSE
 ├── .gitignore
+├── install.sh             # One-command install to agent skill dirs
+├── scripts/
+│   └── validate.sh        # README structure and tone checker
+├── .github/
+│   ├── workflows/
+│   │   └── validate.yml   # CI gate
+│   └── ISSUE_TEMPLATE/
+├── CODE_OF_CONDUCT.md
+├── AGENTS.md
+├── CONTRIBUTING.md
+├── SECURITY.md
+├── CHANGELOG.md
 ├── assets/
 │   ├── banner.svg         # draw.io-style banner
 │   └── banner.drawio      # Editable source
@@ -37,8 +49,11 @@ github-readme-humanizer/
 ## Common Commands
 
 ```bash
-# Validate README links and file existence
-ls -la assets/ examples/
+# Install the skill locally
+./install.sh
+
+# Validate README structure, language switch, forbidden words, etc.
+./scripts/validate.sh
 
 # Check git identity before committing
 git config user.name && git config user.email

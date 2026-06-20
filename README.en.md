@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="README.md">中文</a> | <a href="README.en.md">English</a>
+  <a href="README.en.md">English</a> | <a href="README.md">中文</a>
 </p>
 
 <p align="center">
@@ -9,6 +9,27 @@
 <h1 align="center">github-readme-humanizer</h1>
 
 <p align="center">Make your GitHub README sound like it was written by a real person.</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://github.com/ECdison6227/github-readme-humanizer/actions/workflows/validate.yml"><img src="https://github.com/ECdison6227/github-readme-humanizer/actions/workflows/validate.yml/badge.svg" alt="CI"></a>
+  <a href="https://github.com/ECdison6227/github-readme-humanizer/stargazers"><img src="https://img.shields.io/github/stars/ECdison6227/github-readme-humanizer?style=social" alt="Stars"></a>
+</p>
+
+## Table of Contents
+
+- [One-click Setup](#one-click-setup)
+- [Why I Built This](#why-i-built-this)
+- [What It Does / What It Doesn't Do](#what-it-does--what-it-doesnt-do)
+- [Quick Start](#quick-start)
+- [Full Example](#full-example)
+- [How It Works](#how-it-works)
+- [Key Configuration](#key-configuration)
+- [Pitfalls We Hit](#pitfalls-we-hit)
+- [Limitations and Roadmap](#limitations-and-roadmap)
+- [Thanks](#thanks)
+- [Contact](#contact)
+- [License](#license)
 
 ## One-click Setup
 
@@ -27,7 +48,9 @@ Please install and configure the github-readme-humanizer skill from https://gith
 
 I had a few personal skills I wanted to share on GitHub. The first draft of the README came out like this:
 
+<!-- ai-style-example-begin -->
 > This project is a powerful and efficient README de-AI-fication tool designed to help users automatically generate more natural and human-like GitHub project documentation.
+<!-- ai-style-example-end -->
 
 I cringed reading it. It listed a bunch of features, but no one could tell who it was for, what problem it solved, or when to actually use it. It was a specification sheet, not a project page.
 
@@ -48,14 +71,12 @@ So I wrote this skill. It doesn't generate longer READMEs. It rewrites them so t
 ### Install as a Trae / Codex / Claude Code Skill
 
 ```bash
-# Trae
-git clone https://github.com/ECdison6227/github-readme-humanizer.git \
-  ~/.trae-cn/skills/github-readme-humanizer
-
-# Claude Code
-git clone https://github.com/ECdison6227/github-readme-humanizer.git \
-  ~/.claude/skills/github-readme-humanizer
+git clone https://github.com/ECdison6227/github-readme-humanizer.git
+cd github-readme-humanizer
+./install.sh
 ```
+
+`install.sh` auto-detects common skill directories such as `.claude`, `.codex`, `.trae`, and `.trae-cn`.
 
 Then tell your agent:
 
@@ -71,12 +92,14 @@ If you don't want to install the skill, just read [SKILL.md](SKILL.md). The 12-p
 
 Input: [examples/input/ai-style-readme.md](examples/input/ai-style-readme.md) — a typical AI-flavored README:
 
+<!-- ai-style-example-begin -->
 ```markdown
 # PDF Processor
 
 This project is a powerful and efficient PDF processing tool
 ...
 ```
+<!-- ai-style-example-end -->
 
 Output: [examples/output/human-style-readme.md](examples/output/human-style-readme.md):
 
