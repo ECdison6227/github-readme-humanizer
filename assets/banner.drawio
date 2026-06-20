@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net" modified="2026-06-20T00:00:00.000Z" agent="github-readme-humanizer" version="24.0.0" etag="readme-humanizer" type="device">
+  <diagram name="banner">
+    <mxGraphModel dx="1280" dy="480" grid="1" gridSize="40" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1280" pageHeight="480" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="github-readme-humanizer" style="text;html=1;align=center;verticalAlign=middle;fontSize=34;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="490" y="40" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="让 GitHub README 读起来像真人写的" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontColor=#6b7280" vertex="1" parent="1">
+          <mxGeometry x="490" y="85" width="300" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="input" value="AI 味 README&lt;br&gt;• 本项目是一个高效的...&lt;br&gt;• 支持多种智能识别...&lt;br&gt;• 占位图 + 功能清单" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#f59e0b;fillColor=#ffffff;arcSize=8;fontSize=13;spacing=6;shadow=1" vertex="1" parent="1">
+          <mxGeometry x="80" y="160" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="skill" value="github-readme-humanizer&lt;br&gt;1. 12 条人味自检&lt;br&gt;2. 生成 draw.io banner&lt;br&gt;3. 准备真实示例&lt;br&gt;4. 中英双语 + 一键 Prompt" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#3b82f6;fillColor=#ffffff;arcSize=10;fontSize=14;fontStyle=1;spacing=6;shadow=1" vertex="1" parent="1">
+          <mxGeometry x="420" y="160" width="320" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="output1" value="人味 README&lt;br&gt;真实故事开头" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#10b981;fillColor=#ffffff;arcSize=7;fontSize=13;spacing=5;shadow=1" vertex="1" parent="1">
+          <mxGeometry x="800" y="140" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="output2" value="示例 + banner&lt;br&gt;draw.io 流程图" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#8b5cf6;fillColor=#ffffff;arcSize=7;fontSize=13;spacing=5;shadow=1" vertex="1" parent="1">
+          <mxGeometry x="800" y="260" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="output3" value="推送到 GitHub&lt;br&gt;隐私检查通过" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#ec4899;fillColor=#ffffff;arcSize=7;fontSize=13;spacing=5;shadow=1" vertex="1" parent="1">
+          <mxGeometry x="1010" y="200" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="done" value="开源就绪 ✅" style="text;html=1;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#059669" vertex="1" parent="1">
+          <mxGeometry x="1210" y="215" width="120" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
